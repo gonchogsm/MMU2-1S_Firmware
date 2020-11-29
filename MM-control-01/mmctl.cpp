@@ -30,7 +30,7 @@ void motion_feed_into_mmu(uint16_t steps)
     motion_engage_idler();
     set_pulley_dir_push();
     unsigned long delay = 4500;
-/*
+
 	if(tmc2130_mode == NORMAL_MODE)
 	{
 		tmc2130_init_axis_current_normal(AX_PUL, 1, 15);
@@ -39,7 +39,7 @@ void motion_feed_into_mmu(uint16_t steps)
 	{
 		tmc2130_init_axis_current_stealth(AX_PUL, 1, 15); //probably needs tuning of currents
 	}
-*/
+
     uint_least8_t blinker = 0;
 
     for (uint16_t i = 0; i < steps; i++)
@@ -58,7 +58,7 @@ void motion_feed_into_mmu(uint16_t steps)
         delayMicroseconds(delay);
     }
 
-    //tmc2130_disable_axis(AX_PUL, tmc2130_mode);
+    tmc2130_disable_axis(AX_PUL, tmc2130_mode);
 	motion_disengage_idler();
 	shr16_set_led(1 << 2 * (4 - active_extruder));
 }
