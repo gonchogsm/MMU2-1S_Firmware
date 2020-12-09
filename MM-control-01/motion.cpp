@@ -141,7 +141,9 @@ static void unload_to_splitter()
 void motion_feed_to_bondtech()
 {
     int stepPeriod = 4500; //microstep period in microseconds
-    const uint16_t steps = BowdenLength::get();
+    uint16_t steps = BowdenLength::get();
+    // 1 == 0,0495
+    steps+=405; //20mm more
 
     const uint8_t tries = 2;
     for (uint8_t tr = 0; tr <= tries; ++tr)
