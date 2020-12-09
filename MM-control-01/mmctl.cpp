@@ -33,11 +33,11 @@ void motion_feed_into_mmu(uint16_t steps)
 
 	if(tmc2130_mode == NORMAL_MODE)
 	{
-		tmc2130_init_axis_current_normal(AX_PUL, 1, 15);
+		tmc2130_init_axis_current_normal(AX_PUL, 8, 15);
 	}
 	else
 	{
-		tmc2130_init_axis_current_stealth(AX_PUL, 1, 15); //probably needs tuning of currents
+		tmc2130_init_axis_current_stealth(AX_PUL, 8, 15); //probably needs tuning of currents
 	}
 
     uint_least8_t blinker = 0;
