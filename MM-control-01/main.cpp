@@ -476,9 +476,9 @@ void process_commands(FILE* inout)
 			if (value == 0) //! S0 return ok
 				fprintf_P(inout, PSTR("ok\n"));
 			else if (value == 1) //! S1 Read version
-				fprintf_P(inout, PSTR("%dok\n"), fw_version);
+				fprintf_P(inout, PSTR("%dok\n"), 107);
 			else if (value == 2) //! S2 Read build nr.
-				fprintf_P(inout, PSTR("%dok\n"), fw_buildnr);
+				fprintf_P(inout, PSTR("%dok\n"), 106);
 			else if (value == 3) //! S3 Read drive errors
 			    fprintf_P(inout, PSTR("%dok\n"), DriveError::get());
 		}
