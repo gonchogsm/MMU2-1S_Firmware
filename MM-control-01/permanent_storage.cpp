@@ -38,6 +38,10 @@ static eeprom_t * const eepromBase = reinterpret_cast<eeprom_t*>(0); //!< First 
 static const uint16_t eepromEmpty = 0xffff; //!< EEPROM content when erased
 // 1 == 0,0495
 static const uint16_t eepromLengthCorrectionBase = 1975u; //!< legacy bowden length correction base (~98 mm)
+// Splitter Ryper
+static const uint16_t eepromBowdenLenDefault = 970u; // Super low Version (~48.2 mm)
+//static const uint16_t eepromBowdenLenDefault = 1090u; // Low version (~54 mm)
+
 // ULTRA SHORT
 static const uint16_t eepromBowdenLenDefault = 1818u; //!< Default bowden length (~90 mm)
 // SHORT
@@ -46,7 +50,7 @@ static const uint16_t eepromBowdenLenDefault = 1818u; //!< Default bowden length
 //static const uint16_t eepromBowdenLenDefault = 2225u; //!< Default bowden length (~110 mm)
 //LONGER
 //static const uint16_t eepromBowdenLenDefault = 2500u; //!< Default bowden length (~123 mm)
-static const uint16_t eepromBowdenLenMinimum = 1725u; //!< Minimum bowden length (~85 mm)
+static const uint16_t eepromBowdenLenMinimum = 825u; //!< Minimum bowden length (~85 mm)
 static const uint16_t eepromBowdenLenMaximum = 4000u; //!< Maximum bowden length (~198 mm)
 
 void permanentStorageInit()
