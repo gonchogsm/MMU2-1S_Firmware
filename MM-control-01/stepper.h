@@ -7,7 +7,7 @@
 #include "config.h"
 #include <inttypes.h>
 
-extern int8_t filament_type[EXTRUDERS];
+extern int16_t filament_type[EXTRUDERS];
 
 void home();
 bool home_idler();
