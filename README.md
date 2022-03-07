@@ -1,6 +1,6 @@
-MMU2S firmware for the MMU2+1S edition with splitter
+This is a remix of Mini Splitter v2 for MMU2+1s mod adapted to use PC4-01 fitting between the splitter and the extruder.
 
-Pre-compiled firmware in the firmware/ directory
+https://www.prusaprinters.org/print/122982
 
 
 ---------
