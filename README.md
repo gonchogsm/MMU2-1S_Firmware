@@ -1,6 +1,6 @@
 This is a remix of Mini Splitter v2 for MMU2+1s mod adapted to use PC4-01 fitting between the splitter and the extruder.
 
-https://www.prusaprinters.org/print/122982
+https://www.prusaprinters.org/prints/122982-mini-splitter-v2-for-mmu21s-mod-pc4-01-fitting-ver
 
 
 ---------
